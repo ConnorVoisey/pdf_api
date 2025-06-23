@@ -8,7 +8,6 @@ import (
 
 type (
 	PageOptions struct {
-		Html                    string   `json:"html" example:"<h1>Hello</h1>" doc:"Body of the PDF"`
 		PrintBackground         *bool    `json:"print_background" required:"false" default:"true" doc:"Whether to print background graphics"`
 		DisplayHeaderFooter     *bool    `json:"display_header_footer" required:"false" default:"false" doc:"Whether to display header and footer. If no template is provided, but this field is true, it will use the default chrome header and footer."`
 		HeaderTemplate          *string  `json:"header_template" required:"false" doc:"HTML template for the PDF header"`
